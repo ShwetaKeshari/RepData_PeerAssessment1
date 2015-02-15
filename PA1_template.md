@@ -1,4 +1,9 @@
-# Reproducible Research: Peer Assessment 1
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
 
 #Peer Assessment 1 for Reproducible Research
 ===================================================
@@ -93,7 +98,7 @@ text(mean(steps_per_day$x),25,labels="mean", pos=4, col="blue")      # label the
 text(median(steps_per_day$x),23,labels="median", pos=4, col="red")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
 
 
 3. **calculate the mean and median(i.e-summary staistics):**
@@ -108,7 +113,7 @@ text(median(steps_per_day$x),23,labels="median", pos=4, col="red")
 ##      41    8841   10760   10770   13290   21190
 ```
 
-The mean total number of steps taken per day is 1.0766189\times 10^{4}.
+The mean total number of steps taken per day is 1.0766189 &times; 10<sup>4</sup>.
 
 The median total number of steps taken per day is 10765.
 
@@ -138,7 +143,7 @@ text(which.max(steps_interval$x),max(steps_interval$x),
     pos=4 , col="blue") 
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png) 
+![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png) 
 
     
 2.**Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?**
@@ -226,7 +231,7 @@ text(mean(dailystep),25,labels="mean", pos=4, col="blue")      # label the mean
 text(median(dailystep),23,labels="median", pos=4, col="red")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-13-1.png) 
+![plot of chunk unnamed-chunk-13](figure/unnamed-chunk-13-1.png) 
 
 
 **calculate the mean and median(i.e-summary staistics):**
@@ -245,9 +250,9 @@ text(median(dailystep),23,labels="median", pos=4, col="red")
 mean_step1<-mean(dailystep)
 median_step1<-median(dailystep)
 ```
-The mean total number of steps taken per day is 1.0765639\times 10^{4}.
+The mean total number of steps taken per day is 1.0765639 &times; 10<sup>4</sup>.
 
-The median total number of steps taken per day is 1.0762\times 10^{4}.
+The median total number of steps taken per day is 1.0762 &times; 10<sup>4</sup>.
 
 
 4.**Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?**
@@ -302,7 +307,7 @@ text(mean(dailystep),25,labels="mean", pos=4, col="blue")      # label the mean
 text(median(dailystep),23,labels="median", pos=4, col="red")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-17-1.png) 
+![plot of chunk unnamed-chunk-17](figure/unnamed-chunk-17-1.png) 
 
 The impact of imputing missing data on the estimates of the total daily number of steps is that there is just a difference in the frequency for the center bar of new histogram (as shown in comparison graph)
 
@@ -344,6 +349,6 @@ xyplot(stepsperday$steps ~ stepsperday$interval | stepsperday$day,
        averaged across all weekday days or weekend days")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-19-1.png) 
+![plot of chunk unnamed-chunk-19](figure/unnamed-chunk-19-1.png) 
 
-It looks like this person does his workwout more on weekends than on weekday. He walks more on weekends than on weekdays.
+**It looks like this person does his workwout more on weekends than on weekday. He walks more on weekends than on weekdays.**
