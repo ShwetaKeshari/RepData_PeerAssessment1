@@ -298,4 +298,7 @@ xyplot(stepsperday$steps ~ stepsperday$interval | stepsperday$day,
        
 ```
 
-**It looks like this person does his workwout more on weekends than on weekday. He walks more on weekends than on weekdays.**
+#####Conclusion :**It looks like this person does his workwout more on weekends than on weekday. He walks more on weekends than on weekdays.**
+
+
+

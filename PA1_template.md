@@ -351,4 +351,7 @@ xyplot(stepsperday$steps ~ stepsperday$interval | stepsperday$day,
 
 ![plot of chunk unnamed-chunk-19](figure/unnamed-chunk-19-1.png) 
 
-**It looks like this person does his workwout more on weekends than on weekday. He walks more on weekends than on weekdays.**
+#####Conclusion :**It looks like this person does his workwout more on weekends than on weekday. He walks more on weekends than on weekdays.**
+
+
+
